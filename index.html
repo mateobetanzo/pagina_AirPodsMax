@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>AirPods Max</title>
+</head>
+
+<body>
+  <header class="header">
+    <h2 class="logo"><a href="#inicio">AirPods Max</a></h2>
+    <button class="menu-abrir" id="menu-abrir"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg></button>
+
+    <nav class="nav-header" id="nav-header">
+      <button class="menu-cerrar" id="menu-cerrar"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></button>
+      <ul class="lista-nav">
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#look">Look</a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#sound">Sound</a></li>
+        <li><a href="#design">Design</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-container">
+      <div class="hero-fondo">
+        <video id="hero-video" src="./video/large_2x.mp4" loop autoplay muted></video>
+        <img id="hero-img" src="./images/max-loop_startframe__c0vn1ukmh7ma_xsmall.webp" alt="">
+        <div class="shadow"></div>
+      </div>
+      <div class="hero-items">
+        <div class="hero-text">
+          <p>AirPods Max</p>
+          <h1>Symphonic boom.</h1>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="highlights" class="container-slider">
+      <div class="container-tamaño">
+        <div class="title-left fade">
+          <h2>Get the highlights.</h2>
+        </div>
+      </div>
+      <div class="container-grid-slider-highlights fade">
+        <article id="card-1" class="card">
+          <p>The ultimate over-ear personal listening experience — available in five fresh colors.</p>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./images/colors_static__vc9xxywyt4ya_large_2x.webp">
+            <img src="./images/colors_static__vc9xxywyt4ya_xsmall_1.webp" alt="">
+          </picture>
+        </article>
+        <article id="card-1" class="card">
+          <p>High-fidelity sound. Exhilarating audio with deep bass, expansive mids, and crisp highs.</p>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./images/hifi_static__fbsq0dr3be2q_large_2x.webp">
+            <img src="./images/hifi_static__fbsq0dr3be2q_xsmall_1.webp" alt="">
+          </picture>
+        </article>
+        <article id="card-1" class="card">
+          <p>Pro-level Active Noise Cancellation. Removes unwanted noise so you can immerse yourself in the music.</p>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./images/anc_startframe__gc8z375m3gmm_large_2x.webp">
+            <img src="./images/anc_endframe__c4dezlznnsmu_xsmall.webp" alt="">
+          </picture>
+        </article>
+        <article id="card-1" class="card">
+          <p>Over-ear design. From canopy to cushion, built for unequaled fit and comfort.</p>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./images/design_static__dph7m26odtg2_large_2x.webp">
+            <img src="./images/design_static__dph7m26odtg2_xsmall_1.webp" alt="">
+          </picture>
+        </article>
+        <article id="card-1" class="card">
+          <p>USB‑C. Charging is fast and easy with the one‑cable convenience of USB‑C.2</p>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./images/usbc_static__dowayetbvr6u_large_2x.webp">
+            <img src="./images/usbc_static__dowayetbvr6u_xsmall_1.webp" alt="">
+          </picture>
+        </article>
+      </div>
+      <div class="container-tamaño">
+        <div class="nav-slider fade">
+          <button id="prev-1" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="1 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6" /></svg>
+          </button>
+          <button id="next-1" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="-1 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  
+
+
+    <section id="look">
+      <div class="color-picker fade">
+        <ul class="colors">
+          <li>
+            <input type="radio" name="color" id="c1">
+            <label for="c1" class="ball">
+              <div class="high"></div>
+              <div class="low"></div>
+            </label>
+          </li>
+
+          <li>
+            <input type="radio" name="color" id="c2">
+            <label for="c2" class="ball">
+              <div class="high"></div>
+              <div class="low"></div>
+            </label>
+          </li>
+
+          <li>
+            <input type="radio" name="color" id="c3">
+            <label for="c3" class="ball">
+              <div class="high"></div>
+              <div class="low"></div>
+            </label>
+          </li>
+
+          <li>
+            <input type="radio" name="color" id="c4">
+            <label for="c4" class="ball">
+              <div class="high"></div>
+              <div class="low"></div>
+            </label>
+          </li>
+
+          <li>
+            <input type="radio" name="color" id="c5">
+            <label for="c5" class="ball">
+              <div class="high"></div>
+              <div class="low"></div>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="container-slider">
+        <div class="container-tamaño">
+          <div class="title-left fade">
+            <h2>Take a closer look.</h2>
+          </div>
+        </div>
+        <div class="container-grid-slider-look fade">
+          <article id="card-2" class="card">
+
+            <picture class="color1">
+              <source media="(min-width: 1024px)" srcset="./images/bento_1_airpod_max_midnight__4jy1tkqh9qay_large_2x.webp">
+              <img src="./images/bento_1_airpod_max_midnight__4jy1tkqh9qay_xsmall_2x.webp" alt="">
+            </picture>
+
+            <picture class="color2">
+              <source media="(min-width: 1024px)" srcset="./images/bento_1_airpod_max_starlight__f7v0k5blkzqm_large_2x.webp">
+              <img src="./images/bento_1_airpod_max_starlight__f7v0k5blkzqm_xsmall_2x.webp" alt="">
+            </picture>
+
+            <picture class="color3">
+              <source media="(min-width: 1024px)" srcset="./images/bento_1_airpod_max_blue__blqgkfdancya_large_2x.webp">
+              <img src="./images/bento_1_airpod_max_blue__blqgkfdancya_xsmall_2x.webp" alt="">
+            </picture>
+
+            <picture class="color4">
+              <source media="(min-width: 1024px)" srcset="./images/bento_1_airpod_max_purple__2udwesqoiyq2_large_2x.webp">
+              <img src="./images/bento_1_airpod_max_purple__2udwesqoiyq2_xsmall_2x.webp" alt="">
+            </picture>
+
+            <picture class="color5">
+              <source media="(min-width: 1024px)" srcset="./images/bento_1_airpod_max_orange__btmsk5kl9q3m_large_2x.webp">
+              <img src="./images/bento_1_airpod_max_orange__btmsk5kl9q3m_xsmall_2x.webp" alt="">
+            </picture>
+
+          </article>
+          <article id="card-2" class="card">
+            <div class="mini-card">
+
+              <picture class="color1">
+                <source media="(min-width: 1024px)" srcset="./images/bento_2_airpod_max_midnight__c4h88dvygxkm_large_2x.webp">
+                <img src="./images/bento_2_airpod_max_midnight__c4h88dvygxkm_xsmall_2x.webp" alt="">
+              </picture>
+              <picture class="color1">
+                <source media="(min-width: 1024px)" srcset="./images/bento_3_airpod_max_midnight__csvor4qqjyi6_large_2x.webp">
+                <img src="./images/bento_3_airpod_max_midnight__csvor4qqjyi6_xsmall_2x.webp" alt="">
+              </picture>
+
+              <picture class="color2">
+                <source media="(min-width: 1024px)" srcset="./images/bento_2_airpod_max_starlight__dw9z9ovnwt26_large_2x.webp">
+                <img src="./images/bento_2_airpod_max_starlight__dw9z9ovnwt26_xsmall_2x.webp" alt="">
+              </picture>
+              <picture class="color2">
+                <source media="(min-width: 1024px)" srcset="./images/bento_3_airpod_max_starlight__f1r3r9yyebu6_large_2x.webp">
+                <img src="./images/bento_3_airpod_max_starlight__f1r3r9yyebu6_xsmall_2x.webp" alt="">
+              </picture>
+
+              <picture class="color3">
+                <source media="(min-width: 1024px)" srcset="./images/bento_2_airpod_max_blue__f5acfya6r5e2_large_2x.webp">
+                <img src="./images/bento_2_airpod_max_blue__f5acfya6r5e2_xsmall_2x.webp" alt="">
+              </picture>
+              <picture class="color3">
+                <source media="(min-width: 1024px)" srcset="./images/bento_3_airpod_max_blue__z6fv5c2qemqa_large_2x.webp">
+                <img src="./images/bento_3_airpod_max_blue__z6fv5c2qemqa_xsmall_2x.webp" alt="">
+              </picture>
+
+              <picture class="color4">
+                <source media="(min-width: 1024px)" srcset="./images/bento_2_airpod_max_purple__gj7lois7cq6a_large_2x.webp">
+                <img src="./images/bento_2_airpod_max_purple__gj7lois7cq6a_xsmall_2x.webp" alt="">
+              </picture>
+              <picture class="color4">
+                <source media="(min-width: 1024px)" srcset="./images/bento_3_airpod_max_purple__c3njc7k6equu_large_2x.webp">
+                <img src="./images/bento_3_airpod_max_purple__c3njc7k6equu_xsmall_2x.webp" alt="">
+              </picture>
+
+              <picture class="color5">
+                <source media="(min-width: 1024px)" srcset="./images/bento_2_airpod_max_orange__vu53zik05f2e_large_2x.webp">
+                <img src="./images/bento_2_airpod_max_orange__vu53zik05f2e_xsmall_2x.webp" alt="">
+              </picture>
+              <picture class="color5">
+                <source media="(min-width: 1024px)" srcset="./images/bento_3_airpod_max_orange__ckr1n59ibq1y_large_2x.webp">
+                <img src="./images/bento_3_airpod_max_orange__ckr1n59ibq1y_xsmall_2x.webp" alt="">
+              </picture>
+
+            </div>
+          </article>
+          <article id="card-2" class="card">
+            <div class="mini-card">
+
+              <picture class="color1">
+                <source media="(min-width: 1024px)" srcset="./images/bento_4_airpod_max_midnight__d38igje6phm6_large_2x.webp">
+                <img src="./images/bento_4_airpod_max_midnight__d38igje6phm6_xsmall_2x.webp" alt="">
+              </picture>
+              <picture class="color1">
+                <source media="(min-width: 1024px)" srcset="./images/bento_5_airpod_max_midnight__fhwni7pkavma_large_2x.webp">
+                <img src="./images/bento_5_airpod_max_midnight__fhwni7pkavma_xsmall_2x.webp" alt="">
+              </picture>
+
+              <picture class="color2">
+                <source media="(min-width: 1024px)" srcset="./images/bento_4_airpod_max_starlight__ebnv443uzms2_large_2x.webp">
+                <img src="./images/bento_4_airpod_max_starlight__ebnv443uzms2_xsmall_2x.webp" alt="">
+              </picture>
+              <picture class="color2">
+                <source media="(min-width: 1024px)" srcset="./images/bento_5_airpod_max_starlight__ehkae276i342_large_2x.webp">
+                <img src="./images/bento_5_airpod_max_starlight__ehkae276i342_xsmall_2x.webp" alt="">
+              </picture>
+
+              <picture class="color3">
+                <source media="(min-width: 1024px)" srcset="./images/bento_4_airpod_max_blue__cfidljp9xd7m_large_2x.webp">
+                <img src="./images/bento_4_airpod_max_blue__cfidljp9xd7m_xsmall_2x.webp" alt="">
+              </picture>
+              <picture class="color3">
+                <source media="(min-width: 1024px)" srcset="./images/bento_5_airpod_max_blue__galot3dk9nyq_large_2x.webp">
+                <img src="./images/bento_5_airpod_max_blue__galot3dk9nyq_xsmall_2x.webp" alt="">
+              </picture>
+
+              <picture class="color4">
+                <source media="(min-width: 1024px)" srcset="./images/bento_4_airpod_max_purple__d6l96cp8wbau_large_2x.webp">
+                <img src="./images/bento_4_airpod_max_purple__d6l96cp8wbau_xsmall_2x.webp" alt="">
+              </picture>
+              <picture class="color4">
+                <source media="(min-width: 1024px)" srcset="./images/bento_5_airpod_max_purple__fzyi8qccv7e6_large_2x.webp">
+                <img src="./images/bento_5_airpod_max_purple__fzyi8qccv7e6_xsmall_2x.webp" alt="">
+              </picture>
+
+              <picture class="color5">
+                <source media="(min-width: 1024px)" srcset="./images/bento_4_airpod_max_orange__fzf8s5fv45ea_large_2x.webp">
+                <img src="./images/bento_4_airpod_max_orange__fzf8s5fv45ea_xsmall_2x.webp" alt="">
+              </picture>
+              <picture class="color5">
+                <source media="(min-width: 1024px)" srcset="./images/bento_5_airpod_max_orange__sr8wgkrex7uy_large_2x.webp">
+                <img src="./images/bento_5_airpod_max_orange__sr8wgkrex7uy_xsmall_2x.webp" alt="">
+              </picture>
+
+            </div>
+          </article>
+        </div>
+        <div class="container-tamaño">
+          <div class="nav-slider fade">
+            <button id="prev-2" class="btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="1 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6" /></svg>
+            </button>
+            <button id="next-2" class="btn">
+              <svg xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="-1 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="details" class="container">
+      <div class="fondo">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./images/audio_airpod_max__filcqiddcmye_large_2x.webp">
+          <img src="./images/audio_airpod_max__filcqiddcmye_xsmall_2x.webp" alt="">
+        </picture>
+      </div>
+      <div class="container-tamaño">
+        <div class="container-grid">
+          <div class="title text-white fade">
+            <h1>All the vivid details.</h1>
+            <div class="subtitle fade">
+              <p>AirPods Max deliver stunningly detailed, high-fidelity audio for an unparalleled listening experience. Each part of the custom-built driver works to produce sound with ultra-low distortion across the audible range — so you’ll hear every note with a new sense of clarity.</p>
+            </div>
+          </div>
+          <div class="text-container text-grey">
+            <div class="text fade">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.44 26.77">
+                <path class="cls-1" d="M17.2,1.38a.37.37,0,0,0-.14.5h0A1,1,0,0,1,17,3.12,3,3,0,0,1,15.68,4a10.21,10.21,0,0,1-3.46.56A10.11,10.11,0,0,1,8.77,4a3,3,0,0,1-1.32-.84,1,1,0,0,1-.08-1.23h0a.36.36,0,0,0-.06-.44.37.37,0,0,0-.52,0A1.87,1.87,0,0,0,6.25,2.5a2.11,2.11,0,0,0,.28,1.24A4.09,4.09,0,0,0,8.22,5.17a9.23,9.23,0,0,0,4,.85,9.2,9.2,0,0,0,4-.85,4.17,4.17,0,0,0,1.69-1.43,2,2,0,0,0,.27-1.24,1.8,1.8,0,0,0-.54-1.06.35.35,0,0,0-.44-.06ZM15.2,0a.31.31,0,0,0-.15.41v0a.48.48,0,0,1-.08.62,2.15,2.15,0,0,1-.75.43,6.35,6.35,0,0,1-2,.3,6.09,6.09,0,0,1-2-.31,1.77,1.77,0,0,1-.74-.43A.47.47,0,0,1,9.38.46v0A.31.31,0,0,0,9.34.1a.32.32,0,0,0-.44,0,1.16,1.16,0,0,0-.37.69,1.37,1.37,0,0,0,.17.82,2.52,2.52,0,0,0,1.06.93,5.5,5.5,0,0,0,2.46.54,5.5,5.5,0,0,0,2.46-.54,2.46,2.46,0,0,0,1.06-.93,1.45,1.45,0,0,0,.17-.82,1.16,1.16,0,0,0-.37-.69.3.3,0,0,0-.34,0Zm7.86,17.22a.35.35,0,0,0-.5-.13h0A1,1,0,0,1,21.32,17a3,3,0,0,1-.84-1.31,10.21,10.21,0,0,1-.56-3.46,10.19,10.19,0,0,1,.56-3.45,3,3,0,0,1,.84-1.32,1,1,0,0,1,1.23-.07h0A.36.36,0,0,0,23,7.37a.36.36,0,0,0,0-.52,1.8,1.8,0,0,0-1.06-.54,2,2,0,0,0-1.24.27,4.13,4.13,0,0,0-1.43,1.7,9.16,9.16,0,0,0-.85,4,9.2,9.2,0,0,0,.85,4A4.17,4.17,0,0,0,20.7,18a2.13,2.13,0,0,0,1.24.28A1.87,1.87,0,0,0,23,17.69.35.35,0,0,0,23.06,17.25Zm1.35-2a.3.3,0,0,0-.4-.15l0,0a.47.47,0,0,1-.61-.09,1.75,1.75,0,0,1-.43-.75,6,6,0,0,1-.31-2,6.09,6.09,0,0,1,.31-2,1.77,1.77,0,0,1,.43-.74A.47.47,0,0,1,24,9.43h0a.31.31,0,0,0,.33,0,.31.31,0,0,0,0-.44,1.16,1.16,0,0,0-.69-.37,1.45,1.45,0,0,0-.82.17,2.52,2.52,0,0,0-.93,1.06,5.5,5.5,0,0,0-.54,2.46,5.47,5.47,0,0,0,.54,2.46,2.54,2.54,0,0,0,.93,1.07,1.37,1.37,0,0,0,.82.16,1.16,1.16,0,0,0,.69-.37.3.3,0,0,0,.05-.34ZM1.88,17.12a.35.35,0,0,0-.44.05.36.36,0,0,0,0,.52,1.87,1.87,0,0,0,1.06.55A2.11,2.11,0,0,0,3.74,18a4.17,4.17,0,0,0,1.43-1.69,9.2,9.2,0,0,0,.85-4,9.16,9.16,0,0,0-.85-4,4.13,4.13,0,0,0-1.43-1.7A2,2,0,0,0,2.5,6.31a1.8,1.8,0,0,0-1.06.54.37.37,0,0,0,.44.58h0a1,1,0,0,1,1.23.07A3,3,0,0,1,4,8.82a10.19,10.19,0,0,1,.56,3.45A10.21,10.21,0,0,1,4,15.73,3,3,0,0,1,3.12,17a1,1,0,0,1-1.23.08Zm-1.45-2a.29.29,0,0,0-.33.06.3.3,0,0,0,0,.43A1.16,1.16,0,0,0,.77,16a1.37,1.37,0,0,0,.82-.16,2.54,2.54,0,0,0,.93-1.07,5.47,5.47,0,0,0,.54-2.46,5.5,5.5,0,0,0-.54-2.46,2.52,2.52,0,0,0-.93-1.06,1.45,1.45,0,0,0-.82-.17A1.16,1.16,0,0,0,.08,9a.32.32,0,0,0,0,.34.3.3,0,0,0,.4.15h0a.47.47,0,0,1,.61.09,1.89,1.89,0,0,1,.44.74,6.35,6.35,0,0,1,.3,2,6.27,6.27,0,0,1-.3,2,2,2,0,0,1-.43.75.47.47,0,0,1-.62.08h0Zm15.73-2.83a4.1,4.1,0,0,1-3.94,4.25,4.1,4.1,0,0,1-3.94-4.25A4.1,4.1,0,0,1,12.22,8,4.1,4.1,0,0,1,16.16,12.27Zm-3.94,6C7.13,18.28,4,21.78,4,24.92c0,1.23.78,1.85,2.31,1.85H18.16c1.53,0,2.31-.62,2.31-1.85,0-3.14-3.16-6.64-8.25-6.64Z"></path>
+              </svg>
+              <p><span class="text-white">Personalized Spatial Audio</span> with dynamic head tracking3 gives you a theater‑like experience with sound that surrounds you for movies, TV shows, and games. Using built-in gyroscopes and accelerometers, AirPods Max and your iPhone, iPad, Mac, or Apple TV track the subtle motion of your head, anchoring sounds to your device.</p>
+            </div>
+            <div class="text fade">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 25.1">
+                <path class="cls-1" d="M20.55,16.59A.55.55,0,0,1,20,16V9a.55.55,0,0,1,1.1,0v7A.55.55,0,0,1,20.55,16.59ZM17.1,21.67V3.42a.55.55,0,0,0-1.1,0V21.67a.55.55,0,0,0,1.1,0Zm-3.89-3.12v-12A.55.55,0,0,0,12.66,6a.55.55,0,0,0-.55.55v12a.55.55,0,0,0,.55.55A.55.55,0,0,0,13.21,18.55Zm-4.11,6V.55A.55.55,0,0,0,8.55,0,.55.55,0,0,0,8,.55v24a.55.55,0,0,0,.55.55A.55.55,0,0,0,9.1,24.55Zm-4-5v-14a.55.55,0,0,0-1.1,0v14a.55.55,0,1,0,1.1,0Zm-4-4.75V10.3a.55.55,0,0,0-.55-.55A.55.55,0,0,0,0,10.3v4.5a.55.55,0,0,0,.55.55A.55.55,0,0,0,1.1,14.8Z"></path>
+              </svg>
+              <p><span class="text-white">Adaptive EQ</span> tailors sound to the bespoke fit and seal created by the ear cushions. Inward-facing microphones measure what you’re hearing, then adjust the frequencies of your music to deliver a rich, consistent experience that faithfully reproduces every note.</p>
+            </div>
+            <div class="text fade">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0.5 27.28 97 51.33">
+                <path d="m44.4949 78.6097c3.174 0 5.5032-1.5604 7.3034-3.4843l-2.2234-3.2231c-1.2034 1.2034-2.5199 1.8657-3.9139 1.8657-10.1436 0-11.6476-46.4883-29.1627-46.4883-10.0389 0-14.5364 14.9005-15.9701 28.6264-.1776 1.5408.4919 2.3796 1.8013 2.3796 1.011 0 1.6077-.5807 1.7314-1.745.9365-8.6436 4.2786-24.3414 10.9048-24.3414 3.7144 0 5.8514 4.3295 7.1027 8.8099-1.2217 3.9773-2.2766 8.3447-2.9815 14.8968-.1587 1.5408.4866 2.3796 1.8012 2.3796 1.0217 0 1.6131-.5807 1.761-1.745.2558-2.4584.9507-7.117 1.6321-9.477 3.7263 12.3941 9.1326 31.5459 20.2138 31.5459zm18.6017 0c2.7994 0 5.2015-1.2585 6.9773-3.1391l-2.334-3.1693c-.9121.8044-2.102 1.4667-3.4717 1.4667-10.0169 0-11.5992-46.4883-29.1627-46.4883-3.344 0-5.7757 1.5604-7.5758 3.4842l2.272 3.3202c1.2465-1.2224 2.5145-1.8848 3.9086-1.8848 9.7345 0 11.743 46.4103 29.3863 46.4103zm18.3888 0c10.0145 0 14.5364-14.9005 15.9997-28.6265.1236-1.5408-.5214-2.3743-1.8551-2.3743-.9868 0-1.5834.5754-1.7315 1.764-.9068 8.6246-4.2437 24.2929-10.8806 24.2929-3.7143 0-5.8756-4.3053-7.0974-8.8099 1.2165-3.953 2.2525-8.3203 2.9817-14.8727.1291-1.5408-.4919-2.3743-1.8066-2.3743-1.0406 0-1.6372.5754-1.761 1.764-.2799 2.4342-.9506 7.0685-1.6562 9.4528-3.7021-12.3941-9.1083-31.5459-20.1895-31.5459-3.174 0-5.5032 1.5604-7.2791 3.5084l2.2044 3.2231c1.1981-1.2277 2.5146-1.8901 3.9086-1.8901 10.1435 0 11.6529 46.4884 29.1627 46.4884z" fill="#fff"></path>
+              </svg>
+              <p><span class="text-white">Lossless Audio</span> preserves every detail of the original recording, whether you’re enjoying a movie or music. Simply connect AirPods Max to your device by USB‑C to enable Lossless Audio content. If you create your own audio in apps like Logic Pro and GarageBand, you’ll also get ultra-low latency on par with the built-in speakers on Mac, iPad, and iPhone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+
+
+    <section id="sound" class="container background-grey">
+      <div class="title text-black fade">
+        <h1>Unheard-of sound.</h1>
+      </div>
+      <div class="container-tamaño paddingBottom">
+        <div class="container-flex">
+          <div class="box-image fade">
+            <div class="image">
+              <img src="./images/anc_airpod_max_lifestyle__duzobvqwpz42_large_2x.webp" alt="">
+            </div>
+          </div>
+          <div class="text-flex">
+            <div class="box-text text-grey text fade">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 39">
+                <path d="m26.06 22.7c1.78-2.5 2.71-5.52 2.71-8.74.01-7.7-5.95-13.96-13.28-13.96-3.42 0-6.67 1.38-9.17 3.88-2.66 2.67-4.12 6.26-4.1 10.11 0 3.18.96 6.2 2.78 8.72.32.45.95.55 1.4.23s.55-.95.23-1.4c-1.57-2.17-2.4-4.78-2.4-7.55-.01-3.31 1.23-6.4 3.52-8.69 2.11-2.12 4.87-3.29 7.75-3.29 6.23 0 11.29 5.37 11.29 11.96 0 2.8-.81 5.43-2.34 7.58-.32.45-.21 1.07.23 1.39.18.12.38.19.58.19.31 0 .62-.15.82-.42zm.61 16.3h-22.34c-2.87 0-4.33-1.08-4.33-3.21 0-5.36 6.23-11.1 15.5-11.1s15.5 5.74 15.5 11.1c0 2.13-1.46 3.21-4.33 3.21zm-11.17-17.44c-4.2 0-7.49-3.56-7.49-8.09s3.36-7.9 7.49-7.9 7.49 3.54 7.49 7.9-3.29 8.09-7.49 8.09z"></path>
+              </svg>
+              <p><span class="text-black">Pro‑level Active Noise Cancellation.</span> With up to 2x more noise cancelled, pro‑level Active Noise Cancellation counters external sound with equal anti‑noise. With control over what you hear — and don’t hear — you can immerse yourself in music and podcasts, or simply stay focused, like never before.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-tamaño">
+        <div class="container-flex">
+          <div class="text-flex">
+            <div class="box-text text-grey text fade">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path d="m26.33 23.73c.07-.07.13-.15.19-.23.05-.08.1-.17.14-.26.03-.09.06-.18.08-.28s.03-.2.03-.29c0-.4-.16-.78-.44-1.06-.56-.56-1.56-.56-2.12 0-.28.28-.44.66-.44 1.06 0 .09 0 .19.03.29.02.1.05.19.09.28.03.09.08.18.14.26.05.08.11.16.18.23.28.28.67.44 1.06.44s.78-.16 1.06-.44zm1.39-6.19c.76 0 1.41-.57 1.49-1.34.09-.83-.51-1.56-1.34-1.65-.82-.08-1.56.52-1.64 1.34-.09.83.51 1.56 1.34 1.65zm-24.45 0s.1-.01.16-.01c.82-.09 1.42-.83 1.33-1.65-.08-.82-.82-1.42-1.65-1.34-.82.09-1.42.83-1.33 1.66.08.76.73 1.34 1.49 1.34zm23.4-6.98c.2 0 .41-.04.6-.13.76-.33 1.11-1.22.77-1.97-.33-.76-1.21-1.11-1.97-.78-.76.34-1.11 1.22-.77 1.98.24.56.79.9 1.37.9zm-22.37-.01c.58 0 1.13-.33 1.38-.9.33-.76 0-1.64-.77-1.97-.76-.34-1.64 0-1.98.77-.33.75 0 1.64.77 1.97.2.09.4.13.6.13zm17.9-5.44c.48 0 .95-.23 1.24-.65.47-.68.29-1.62-.39-2.09s-1.61-.29-2.08.39c-.48.68-.3 1.62.38 2.09.26.17.56.26.85.26zm-13.41 0c.29 0 .59-.09.85-.27.68-.47.85-1.4.38-2.1-.47-.68-1.4-.85-2.09-.38-.68.47-.85 1.41-.38 2.09.29.42.76.65 1.24.65zm6.71-2.1c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.49.67 1.51 1.5 1.51zm-9.42 21.13c.1-.02.19-.05.28-.09.09-.03.18-.08.26-.14.08-.05.16-.11.23-.18s.13-.15.18-.23c.06-.08.1-.17-.14-.26s.07-.18.09-.28.03-.19.03-.29c0-.4-.16-.78-.44-1.06-.56-.56-1.57-.56-2.12 0-.28.28-.44.66-.44 1.06 0 .1 0 .19.03.29 0 .1.04.19.08.28s.09.18.14.26.12.16.19.23c.28.28.66.44 1.06.44.1 0 .19-.01.29-.03zm20.59 15.47h-22.34c-2.87 0-4.33-1.08-4.33-3.21 0-5.36 6.23-11.1 15.5-11.1s15.5 5.74 15.5 11.1c0 2.13-1.46 3.21-4.33 3.21zm-11.17-17.44c-4.2 0-7.49-3.56-7.49-8.09s3.36-7.9 7.49-7.9 7.49 3.54 7.49 7.9-3.29 8.09-7.49 8.09z"></path>
+              </svg>
+              <p><span class="text-black">Transparency mode.</span> Press the noise control button to switch to Transparency mode, which lets outside sound in so you can interact naturally with your surroundings.</p>
+            </div>
+          </div>
+          <div class="box-image">
+            <div class="image-png fade">
+              <img src="./images/anc_airpod_max_close_up__gavc4fgecei6_large_2x.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="design" class="container-design">
+      <div class="container-tamaño">
+        <div class="title text-black fade">
+          <h1>Everything designed in perfect harmony.</h1>
+        </div>
+        <div class="box-image fade">
+          <div class="image">
+            <img src="./images/design_airpod_max__c1kuh0ewgca6_large_2x.webp" alt="">
+          </div>
+        </div>
+        <div class="text-grey fade">
+          <div class="subtitle-design">
+            <p>From cushion to canopy, AirPods Max are designed for an uncompromising fit with unequaled comfort that creates the optimal acoustic seal for many different head shapes — fully immersing you in every sound.</p>
+          </div>
+        </div>
+      </div>
+    </section> 
+    
+  </main>
+
+  <footer class="footer background-grey">
+    <div class="subtitle text-grey">
+      <p>Mateo Betanzo</p>
+    </div>
+  </footer>
+
+</body>
+  <script src="./script.js"></script>
+</html>
+
