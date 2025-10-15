@@ -57,10 +57,9 @@ const colors = [
 ];
 
 document.querySelectorAll(".colors li").forEach((li, i) => {
-  const high = li.querySelector(".high");
-  const low = li.querySelector(".low");
-  high.style.backgroundColor = colors[i][0];
-  low.style.backgroundColor = colors[i][1];
+  const ball = li.querySelector(".ball");
+  // Aplicar colores
+  ball.style.background = `linear-gradient(${colors[i][0]} 50%, ${colors[i][1]} 50%)`;
 });
 
 // --------------------------------------------------------------------------select color
